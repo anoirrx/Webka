@@ -1,0 +1,29 @@
+#title{
+  margin:10px auto;
+  align-self: center;
+  font-size: 30px;
+}
+
+.products{
+  width: 40%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.products > p{
+  font-size: 18px;
+  color:black;
+}
+
+.products img {
+  height:200px;
+  width:auto;
+}
+
+.products button {
+  font-size: 20px;
+  line-height:20px;
+
+}
