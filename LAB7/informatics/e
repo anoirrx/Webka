@@ -1,0 +1,28 @@
+def min_of_4(a1,a2,a3,a4):                                      #306 A
+    x = []
+    x.append(a1)
+    x.append(a2)
+    x.append(a3)
+    x.append(a4)
+    print(min(x))
+    
+a, b, c, d = int(input()), int(input()), int(input()), int(input())
+min_of_4(a,b,c,d)
+    
+def p_power(a,n):                                                           #307 B
+    print(a**n)
+    
+a, b = int(input()), int(input())
+p_power(a,b)
+
+def xor(x,y):                                           #308 C
+    c = x+y
+    t = 0
+    if c==1:
+        t = 1
+    else:
+        t = 0
+    return t
+
+a, b = int(input()), int(input())
+xor(a,b)
