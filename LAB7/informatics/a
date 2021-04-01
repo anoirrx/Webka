@@ -1,0 +1,16 @@
+a, b =  int(input()), int(input())              #2936 A
+print((a**2+b**2)**0.5)
+
+a = int(input())
+print('The next number for the number ', a, ' is ', a+1, '.', sep='')                                   #2937 B
+print('The previous number for the number ', a, ' is ', a-1, '.', sep='')
+
+a, b = int(input()), int(input())                           #2938 C
+print(b//a)
+
+a, b = int(input()), int(input())               #2939 D
+print(b%a)
+
+a = int(input())                        #2940 E
+b = int(input())
+print((a * b) % 109)
