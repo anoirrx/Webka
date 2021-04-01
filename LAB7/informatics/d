@@ -1,0 +1,51 @@
+s = input()                 #3152 A
+s = s.split()
+for i in range(len(s)):
+    if i%2==0:
+        print(s[i])
+
+s = input()                 #3153 B
+s = s.split()
+for i in range(len(s)):
+    b = int(s[i])
+    if b%2==0:
+        print(b)
+    
+s = input()                 #3154 C
+s = s.split()
+cnt = 0
+for i in range(len(s)):
+    b = int(s[i])
+    if b>=0:
+        cnt+=1
+print(cnt)
+
+s = input()                 #3155 D
+s = s.split()
+cnt = 0
+lol = []
+for i in range(len(s)):
+    b = int(s[i])
+    lol.append(b)
+c = len(lol)
+for j in range(1,c):
+    d = j-1
+    if lol[j]>lol[d]:
+        print(lol[j])
+
+s = input()                                 #3156 E
+s = s.split()
+lol = []
+for i in range(len(s)):
+    b = int(s[i])
+    lol.append(b)
+c = len(lol)
+cnt = 0
+for j in range(1,c):
+    d = j-1
+    if lol[d]>=0:
+        cnt+=1
+        if lol[j]>=0:
+            cnt+=1
+    if cnt==2 or cnt==0:
+        print(lol[d], lol[j])
