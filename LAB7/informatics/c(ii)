@@ -1,0 +1,63 @@
+a = int(input())                #113 A
+lol = []
+for i in range(1,10):
+    lol.append(i**2)
+for i in range(a):
+    if lol[i]<a:
+        print(lol[i])
+    if lol[i]>=a:
+        break
+        
+a = int(input())                #3058 B
+for i in range (2,a):
+    if a%i==0:
+        print(i)
+        break
+
+a = int(input())                #3058 B
+b = 2
+cnt = 0
+while cnt!=1:
+    if a%b==0:
+        print(b)
+        cnt+=1
+    b += 1
+
+a = int(input())                #3059 C
+lol = []
+for i in range(1,7):
+    b = 2 ** i
+    lol.append(b)
+flag = False
+xax = 0
+while flag==False:
+    if lol[xax]>a:
+        flag=True
+        break
+    if lol[xax]<=a:
+        print(lol[xax])
+        xax +=1
+    
+a = int(input())                    #3060 D
+lol = []    
+for i in range(0,11):
+    b = 2 ** i
+    lol.append(b)
+
+flag = False
+
+for i in range(len(lol)):
+    if a==lol[i]:
+        flag=True
+
+if flag==True:
+    print('YES')
+else:
+    print('NO')
+
+a = int(input())                    #3061 E
+for i in range(10):
+    b = 2 ** i
+    if b>a:
+        print(i)
+        break
