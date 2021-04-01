@@ -1,0 +1,36 @@
+python -m pip install Django
+python -m django --version      3.1.7
+cd /home/nurlan/Django
+django-admin startproject myfirst
+#managepy консольная утилита
+#4 файла в папке
+  __init__.py     #сообщение что данная директория является пакетом
+  settings.py     #настройки проекта
+  urls.py         #корневая url привязка
+  wsgi.py         #нужен для веб-серверов, чтобы загружать на хостинг
+  
+в settings есть DEBUG, это режим тестирования, True когда работаем над проектом и False когда уже заливаем на хостинг
+
+  ALLOWED_HOSTS - хосты для защиты
+
+  INSTALLED_APPS - список установленных приложений
+
+  TEMPLATES - настройки шаблонизатора
+
+  DATABASES - настройки соединения с базой данных
+
+  LANGUAGE_CODE - язык
+  
+  TIME_ZONE - временная зона 
+  
+Локальный тесторвый сервер: 
+  cd /home/nurlan/Django/myfirst
+  python manage.py runserver
+    стандартно это http://127.0.0.1:8000/
+    автоматическое обновление
+CTRL+S остановка RUN-сервера
+
+Создание приложения
+  cd /home/nurlan/Django/myfirst
+  python manage.py startapp articles
+  
