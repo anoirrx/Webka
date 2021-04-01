@@ -1,0 +1,38 @@
+a, b = int(input()), int(input())                           #292 A
+if a>b:
+    print(a)
+elif a<b:
+    print(b)
+else:
+    print('equality')
+
+year = int(input())                                                                 #253 B
+if (year % 4 == 0) and (year % 100 != 0) or (year % 400 == 0):
+    print('YES')
+else:
+    print('NO')
+
+a = int(input())                    #2960 C
+b = int(input())
+if a < b:
+    for i in range(a, b + 1):
+        print(i)
+else:
+    for i in range(a, b - 1, -1):
+        print(i)
+
+a = int(input())            #2959 D
+if a>0:
+    print('1')
+elif a<0:
+    print('-1')
+elif a==0:
+    print('0')
+
+a, b = int(input()), int(input())                           #293 E
+if a>b:
+    print(a)
+elif a<b:
+    print(b)
+else:
+    print('0')
