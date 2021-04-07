@@ -1,0 +1,80 @@
+1) # created new django project "shop-back"
+2) # creating a superuser
+    python manage.py migrate
+    python manage.py createsuperuser
+    python manage.py runserver  #http://localhost:8000/admin
+3) virtualenv shop_back     #create environment
+   ls shop_back
+      or 
+      cd shop_back
+      ls
+      ls lib/
+        если cd shop_back
+             и потом
+             pip install ...
+             делать
+             то в этом environment будут храниться эти расширения
+4) # activating the environment
+   source shop_back/bin/activate
+    после этого если 
+    pip install ...
+    делать, то не будет глобально скачиваться, а только под этот environment
+      для деактивации надо просто deactivate написать
+      exit() для выхода из подраздела
+5) # нужное
+   pip freeze показывает все скачанные библиотеки
+   после скачивания нужно сделать
+   pip freeze > requirements.txt
+      будет показывать все ответы с pip freeze, shows installed packages
+   если сделать передавать код другому челу, то можно
+      pip install -r requirements.txt
+      скачивает все библиотеки нашег окружения
+6) source shop_back/bin/activate
+   pip install django==2.1
+   pip freeze
+7) # django project installation
+   django-admin startproject shop
+   cd shop/
+   python manage.py migrate
+   python manage.py runserver
+8) # пять файлов для empty django project
+   __init__.py
+   settings.py
+   urls.py
+   wsgi.py
+ manage.py
+   
+9) # связь of environment with django application
+  settings > Project > Python Interpreter > Show all > + > Existing environment > shop_back > bin > python 3.8
+  
+*) справа edit configurations and we can see our environment
+
+10) manage.py
+entire of our project, it is needed for running the project and manipulating any actions inside the project
+it just import settings of django module
+and depending on system arguments it will execute needed options
+
+11) __init__.py
+empty file
+
+12) settings.py
+it is about all settings of django application
+
+13) urls.py
+store all the pathes, all the existing urls
+
+14) wsgi.py
+just create an application 
+
+15) # for running the project
+    to run the project first of all in global terminal activate the environment
+        source shop_back/bin/activate
+    after print in local terminal of pycharm
+        cd /home/nurlan/shop
+        python manage.py
+        python manage.py migrate
+        python manage.py runserver        # localhost:8000
+        
+16) # creating a superuser
+    
+        
