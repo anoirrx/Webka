@@ -1,0 +1,11 @@
+shop_back is environment
+shop is django application
+
+*) in local terminal of pycharm in order to work in this environment
+  workon shop_back
+  
+*) creating new application
+    python manage.py startapp api
+    # adding to the settings.py name of our application
+
+*) postman
